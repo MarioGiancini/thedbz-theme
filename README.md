@@ -11,6 +11,6 @@ Github project link: https://github.com/copyblogger/genesis-sample
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
 
-## Theme Support 
+## Theme Support
 
 Please visit http://my.studiopress.com/help/ for theme support.
