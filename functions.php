@@ -15,6 +15,49 @@ function genesis_sample_google_fonts() {
 
 }
 
+//* Structural Wraps
+add_theme_support( 'genesis-structural-wraps', array(
+	'header',
+	'nav',
+	'subnav',
+	'site-inner',
+	'footer-widgets',
+	'footer-nav',
+	'footer'
+) );
+
+//* Add Custom Navs
+add_theme_support(
+  'genesis-menus', 
+	array(
+		'primary'   => __( 'Primary Navigation Menu', 'child-domain' ),
+		'secondary' => __( 'Secondary Navigation Menu', 'child-domain' ), 
+		'top'       => __( 'Top Navigation Menu', 'child-domain' ),
+		'footer'	=> __( 'Footer Navigation Menu', 'child-domain' )
+	)
+);
+
+//* Add support for post formats
+add_theme_support( 'post-formats', array(
+	'audio',
+	'gallery',
+	'image',
+	'link',
+	'quote',
+	'video'
+) );
+
+/**
+ * Utilize Image Post Format to display featured image
+ */
+add_action( 'genesis_before_entry_content', 'post_format_image_featured' );
+function post_format_image_featured() {
+	if ( has_post_format( 'image' ) && has_post_thumbnail() && is_singular( 'post' ) ) { 
+		$img = genesis_get_image( array( 'format' => 'html', 'size' => genesis_get_option( 'image_size' ), 'attr' => array( 'class' => 'post-image' ) ) );
+		printf( '<a href="%s" id="featured-post-image" title="%s">%s</a>', get_permalink(), the_title_attribute( 'echo=0' ), $img );
+	}
+}
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
