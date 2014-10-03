@@ -2,21 +2,21 @@
 
 
 //* Add the Featured Article section 
-add_action( 'genesis_after_header', 'home_featured_articles' );
+add_action( 'genesis_before_loop', 'home_featured_articles' );
 function home_featured_articles() {
 
 	echo '<div class="home-featured widget-area"><div class="wrap">';
 
     if (is_active_sidebar( 'home-featured' )) { // sidebar created with simple sidebars plugin
         genesis_widget_area( 'home-featured', array(
-            'before' => '<div class="two-thirds featured-single">',
+            'before' => '<div class="two-thirds first featured-single">',
             'after' => '</div>'
             ) );
     }
 
 	if (is_active_sidebar( 'home-featured-2' )) { // sidebar created with simple sidebars plugin
         genesis_widget_area( 'home-featured-2', array(
-            'before' => '<div class="one-third featured-double">',
+            'before' => '<div class="one-third last featured-double">',
             'after' => '</div>'
             ) );
     }
@@ -26,7 +26,7 @@ function home_featured_articles() {
 }
 
 //* Add the Featured Article section 
-add_action( 'genesis_after_header', 'home_featured_columns' );
+add_action( 'genesis_before_loop', 'home_featured_columns' );
 function home_featured_columns() {
 
 	echo '<div class="home-featured-columns widget-area"><div class="wrap">';
