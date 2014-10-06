@@ -814,6 +814,11 @@ img.alignright,
 	width:270px;
 }
 
+.entry-image .attachment-post{
+
+width:525px;
+height:224px;
+}
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
