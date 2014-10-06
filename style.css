@@ -271,7 +271,7 @@ img {
 
 .featured-content img,
 .gallery img {
-	width: 575px;
+	width: auto;
 }
 
 /* ## Gallery
@@ -812,12 +812,6 @@ img.alignright,
 
 .featured-content .featuredpost{
 	width:270px;
-}
-
-.entry-image .attachment-post{
-
-width:525px;
-height:224px;
 }
 
 /* # Plugins
