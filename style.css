@@ -678,7 +678,7 @@ th {
 }
 
 .entry-title {
-	font-size: 46px;
+	font-size: 36px;
 }
 
 .entry-title a,
@@ -1117,6 +1117,7 @@ p.entry-meta {
 }
 
 .entry-header .entry-meta {
+	margin-left:15px;
 	margin-bottom: 24px;
 }
 
