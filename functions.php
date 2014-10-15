@@ -91,10 +91,10 @@ add_filter( 'genesis_post_info', 'dbz_post_info_filter' );
 function dbz_post_info_filter($post_info) {
 	
 	if( is_singular() ) {
-		$post_info = '[post_date_human_time] [post_author_posts_link]';
+		$post_info = '[post_date format="relative"] [post_author_posts_link]';
 	    return $post_info;
 	} else {
-		$post_info = '[post_date_human_time] [post_categories before=""]';
+		$post_info = '[post_date format="relative"] [post_categories before=""]';
     	return $post_info;
 	}
 

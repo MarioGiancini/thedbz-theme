@@ -33,10 +33,3 @@ function dbz_shortcode_copyright() {
 }
 add_shortcode( 'copyright', 'mb_shortcode_copyright' );
 
-/**
- * Shortcode to display human time instead of date
- */
-function set_post_date_human( $atts ) {
-    return human_time_diff( get_the_time('U'), current_time('timestamp') );
-}
-add_shortcode('post_date_human_time', 'set_post_date_human');
