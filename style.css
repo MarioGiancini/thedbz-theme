@@ -1078,6 +1078,7 @@ img.alignright,
 .entry {
 	margin-bottom: 40px;
 	padding: 50px 60px;
+	overflow:none;
 }
 
 .content .entry {
