@@ -685,7 +685,7 @@ th {
 }
 
 .entry-title {
-	font-size: 36px;
+	font-size: 28px;
 	position: relative;
 }
 
@@ -703,7 +703,7 @@ th {
 }
 
 .entry-title h2 {
-	padding:0 0 0 10px;
+	padding:0 0 0 5px;
 }
 
 .entry-title a,
@@ -783,7 +783,7 @@ img.alignright,
 }
 
 .entry-content p {
-	padding: 0 0 0 10px;
+	padding: 0 0 0 5px;
 }
 
 .entry-content p.wp-caption-text {
