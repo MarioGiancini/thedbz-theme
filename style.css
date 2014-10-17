@@ -1154,7 +1154,7 @@ p.entry-meta {
 .entry-time {
 	position: absolute;
 	left: -250px;
-	bottom:50px;
+	bottom:40px;
 	background: #e9352f;
 	color:#fff;
 	font-weight:200;
