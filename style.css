@@ -1115,6 +1115,7 @@ img.alignright,
 
 .entry-content p {
 	display:block;
+	clear:both;
 }
 
 .entry-content ol,
