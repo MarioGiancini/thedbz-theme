@@ -1155,7 +1155,8 @@ p.entry-meta {
 	position: absolute;
 	left: -240px;
 	bottom:60px;
-	background: #eee;
+	background: #e9352f;
+	color:#fff;
 	padding: 1px 8px;
 }
 
