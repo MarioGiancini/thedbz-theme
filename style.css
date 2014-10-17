@@ -1113,6 +1113,10 @@ img.alignright,
 	background-color: #fff;
 }
 
+.entry-content p {
+	display:block;
+}
+
 .entry-content ol,
 .entry-content ul {
 	margin-bottom: 28px;
