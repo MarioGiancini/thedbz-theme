@@ -702,6 +702,10 @@ th {
 	background: #f9f9f9;
 }
 
+.entry-title h2 {
+	padding:0 0 0 10px;
+}
+
 .entry-title a,
 .sidebar .widget-title a {
 	color: #333;
@@ -776,6 +780,10 @@ img.alignright,
 	font-size: 14px;
 	font-weight: 700;
 	text-align: center;
+}
+
+.entry-content p {
+	padding: 0 0 0 10px;
 }
 
 .entry-content p.wp-caption-text {
@@ -1145,7 +1153,8 @@ p.entry-meta {
 
 .entry-time {
 	position: absolute;
-	left: -170px;
+	left: -250px;
+	bottom:60px;
 	background: #eee;
 	padding: 1px 8px;
 }
