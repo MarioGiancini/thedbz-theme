@@ -1153,7 +1153,7 @@ p.entry-meta {
 
 .entry-time {
 	position: absolute;
-	left: -250px;
+	left: -240px;
 	bottom:60px;
 	background: #eee;
 	padding: 1px 8px;
@@ -1313,6 +1313,7 @@ li.comment {
 	background-color: #fff;
 	margin-bottom: 40px;
 	padding: 40px;
+	height:600px;
 }
 
 
