@@ -1157,6 +1157,7 @@ p.entry-meta {
 	bottom:60px;
 	background: #e9352f;
 	color:#fff;
+	font-weight:100;
 	padding: 1px 8px;
 }
 
@@ -1172,7 +1173,7 @@ p.entry-meta {
 	pointer-events: none;
 	border-top: 14px solid transparent;
 	border-bottom: 14px solid transparent;
-	border-left: 11px solid #a5a5a5;
+	border-left: 11px solid #e9352f;
 }
 
 .entry-footer .entry-meta {
