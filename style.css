@@ -654,6 +654,7 @@ th {
 --------------------------------------------- */
 
 .search-form {
+	border-radius:7px;
 	overflow: hidden;
 }
 
@@ -899,7 +900,7 @@ img.alignright,
 
 .site-header {
 	background-color: #fff;
-	min-height: 160px;
+	min-height: 200px;
 }
 
 .site-header .wrap {
