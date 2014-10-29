@@ -694,13 +694,13 @@ th {
 .home .content > .entry .entry-title:before {
 	content: "";
 	position: absolute;
-	left: -28px;
-	top: 3px;
+	left: -33px;
+	top: 4px;
 	display: block;
-	width: 14px;
-	height: 14px;
+	width: 18px;
+	height: 18px;
 	border: 3px solid #d2d3d2;
-	border-radius: 14px;
+	border-radius: 50%;
 	background: #f9f9f9;
 }
 
@@ -899,11 +899,10 @@ img.alignright,
 
 .site-header {
 	background-color: #fff;
-	min-height: 200px;
 }
 
 .site-header .wrap {
-	padding: 40px 0;
+	padding: 0;
 }
 
 /* ## Title Area
@@ -911,7 +910,6 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 10px 0;
 	width: 360px;
 }
 
@@ -1105,9 +1103,15 @@ img.alignright,
 /* ## Entries
 --------------------------------------------- */
 
+.home .entry,
+.archive .entry {
+	border-left: 2px solid #d2d3d2;
+	margin-bottom: 0;
+}
+
 .entry {
 	margin-bottom: 40px;
-	padding: 50px 60px;
+	padding: 40px 20px;
 }
 
 .content .entry {
@@ -1149,7 +1153,6 @@ img.alignright,
 p.entry-meta {
 	font-size: 16px;
 	margin-bottom: 0;
-	position: relative;
 }
 
 .entry-header .entry-meta {
@@ -1159,12 +1162,14 @@ p.entry-meta {
 
 .entry-time {
 	position: absolute;
-	left: -250px;
-	bottom:40px;
+	left: -155px;
+	top: 2px;
 	background: #e9352f;
-	color:#fff;
-	font-weight:200;
+	color: #fff;
+	font-weight: 500;
+	min-width: 110px;
 	padding: 1px 8px;
+	text-align: center;
 }
 
 
@@ -1318,10 +1323,7 @@ li.comment {
 }
 
 .sidebar .widget {
-	background-color: #fff;
 	margin-bottom: 40px;
-	padding: 40px;
-	height:600px;
 }
 
 

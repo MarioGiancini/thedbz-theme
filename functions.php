@@ -94,7 +94,7 @@ function dbz_post_info_filter($post_info) {
 		$post_info = '[post_date format="relative"] [post_author_posts_link]';
 	    return $post_info;
 	} else {
-		$post_info = '[post_date format="relative"] [post_categories before=""]';
+		$post_info = '[dbz_post_date] [post_categories before=""]';
     	return $post_info;
 	}
 
@@ -114,3 +114,11 @@ function dbz_filter_post_meta($post_meta) {
     	return $post_meta;
 	}
 }
+
+//* Add Read More Link to Excerpts
+add_filter('excerpt_more', 'get_read_more_link');
+add_filter( 'the_content_more_link', 'get_read_more_link' );
+function get_read_more_link() {
+   return '...&nbsp;<a href="' . get_permalink() . '" class="morelink">[Keep&nbsp;Reading]</a>';
+}
+
