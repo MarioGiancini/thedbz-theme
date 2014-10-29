@@ -1114,6 +1114,11 @@ img.alignright,
 	padding: 40px 20px;
 }
 
+.home .entry-header,
+.archive .entry-header {
+	position: relative;
+}
+
 .content .entry {
 	background-color: #fff;
 }
