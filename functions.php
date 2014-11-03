@@ -119,6 +119,6 @@ function dbz_filter_post_meta($post_meta) {
 add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
 function get_read_more_link() {
-   return '...&nbsp;<a href="' . get_permalink() . '" class="morelink">Keep&nbsp;Reading</a>';
+   return '...&nbsp;<a href="' . get_permalink() . '" class="morelink">Keep&nbsp;Reading <i class="fa fa-chevron-right"></i></a>';
 }
 

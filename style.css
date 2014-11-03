@@ -136,9 +136,9 @@ body {
 	background: linear-gradient(to right,#ffffff 0,#ffffff 50%,#ececec 50%,#ececec 100%);
 	color: #333;
 	font-family: Lato, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
-	line-height: 1.625;
+	line-height: 1.5;
 	margin: 0;
 }
 
@@ -150,6 +150,7 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
+.entry-title:before,
 .gallery img {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition:    all 0.1s ease-in-out;
@@ -169,7 +170,7 @@ textarea:focus,
 }
 
 a {
-	color: #e5554e;
+	color: #ea352d;
 	text-decoration: none;
 }
 
@@ -179,9 +180,9 @@ a:hover {
 
 a.morelink {
 	font-weight: 500;
-	background: #e5554e;
+	background: #ea352d;
 	color: #fff;
-	padding: 1px 2px;
+	padding: 2px 10px 3px;
 }
 
 a.morelink:hover {
@@ -405,7 +406,7 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: #e5554e;
+	background-color: #ea352d;
 	color: #fff;
 }
 
@@ -414,7 +415,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background-color: #e5554e;
+	background-color: #ea352d;
 	color: #fff;
 }
 
@@ -511,7 +512,7 @@ th {
 .content {
 	background: #fff;
 	float: right;
-	width: 800px;
+	width: 840px;
 	padding-top: 40px;
 }
 
@@ -535,7 +536,7 @@ th {
 
 .sidebar-primary {
 	float: right;
-	width: 360px;
+	width: 320px;
 }
 
 .sidebar-content .sidebar-primary,
@@ -715,6 +716,10 @@ th {
 	background: #f9f9f9;
 }
 
+.home .content > .entry:hover .entry-title:before {
+	background: #ea352d;
+}
+
 .entry-title h2 {
 	padding:0 0 0 5px;
 }
@@ -725,7 +730,7 @@ th {
 }
 
 .entry-title a:hover {
-	color: #e5554e;
+	color: #ea352d;
 }
 
 .widget-title {
@@ -882,7 +887,7 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #e5554e;
+	background-color: #ea352d;
 	color: #fff;
 	margin: 0;
 	width: 100%;
@@ -942,8 +947,8 @@ img.alignright,
 .header-image .site-title > a {
 	background: url(images/logo.png) no-repeat left;
 	float: left;
-	min-height: 140px;
-	width: 100%;
+	min-height: 120px;
+	width: 230px;
 }
 
 .site-description {
@@ -991,13 +996,13 @@ img.alignright,
 .genesis-nav-menu a {
 	color: #333;
 	display: block;
-	padding: 30px 24px;
+	padding: 20px 24px;
 }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #e5554e;
+	color: #ea352d;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1097,7 +1102,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #e5554e;
+	color: #ea352d;
 }
 
 /* ## Secondary Navigation
@@ -1114,10 +1119,19 @@ img.alignright,
 /* ## Entries
 --------------------------------------------- */
 
-.home .entry,
-.archive .entry {
+.home .content .entry,
+.archive .content .entry {
 	border-left: 2px solid #d2d3d2;
 	margin-bottom: 0;
+}
+
+.content .home-featured .entry,
+.content .home-featured-columns .entry {
+	border-left: none;
+}
+
+.home-featured .entry img {
+	width: 100%;
 }
 
 .entry {
@@ -1137,6 +1151,11 @@ img.alignright,
 .entry-content p {
 	display:block;
 	clear:both;
+}
+
+.home .entry-content p,
+.archive .entry-content p {
+	display: inline;
 }
 
 .entry-content ol,
@@ -1178,14 +1197,19 @@ p.entry-meta {
 
 .entry-time {
 	position: absolute;
-	left: -155px;
+	left: -170px;
 	top: 2px;
-	background: #e9352f;
+	background: #ea352d;
 	color: #fff;
-	font-weight: 500;
-	min-width: 110px;
-	padding: 1px 8px;
+	font-weight: 300;
+	width: 125px;
+	padding: 1px 5px;
 	text-align: center;
+}
+
+.entry-time i {
+	float: left;
+	margin: 5px 2px;
 }
 
 
@@ -1200,7 +1224,7 @@ p.entry-meta {
 	pointer-events: none;
 	border-top: 14px solid transparent;
 	border-bottom: 14px solid transparent;
-	border-left: 11px solid #e9352f;
+	border-left: 11px solid #ea352d;
 }
 
 .entry-footer .entry-meta {
@@ -1250,7 +1274,7 @@ p.entry-meta {
 
 .archive-pagination li a:hover,
 .archive-pagination .active a {
-	background-color: #e5554e;
+	background-color: #ea352d;
 }
 
 /* ## Comments

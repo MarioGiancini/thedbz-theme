@@ -137,9 +137,14 @@ function dbz_post_date_shortcode( $atts ) {
 	$atts = shortcode_atts( $defaults, $atts, 'dbz_post_date' );
 
 	$display = dbz_human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ), $atts['units'] ) . ' ' . __( 'ago', 'genesis' );
-
+	
+	// Check to see the time difference
+	$time_diff = current_time( 'timestamp' ) - get_the_time( 'U' );
+	// If time is greater than a day difference use calendar icon, if not use clock
+	$icon = ( $time_diff > 86400 ) ? '<i class="fa fa-calendar"></i>' : '<i class="fa fa-clock-o"></i>';
+	
 	if ( genesis_html5() )
-		$output = sprintf( '<time %s>', genesis_attr( 'entry-time' ) ) . $atts['before'] . $atts['label'] . $display . $atts['after'] . '</time>';
+		$output = sprintf( '<time %s>' . $icon, genesis_attr( 'entry-time' ) ) . $atts['before'] . $atts['label'] . $display . $atts['after'] . '</time>';
 	else
 		$output = sprintf( '<span class="date published time" title="%5$s">%1$s%3$s%4$s%2$s</span> ', $atts['before'], $atts['after'], $atts['label'], $display, get_the_time( 'c' ) );
 
